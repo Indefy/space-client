@@ -6,8 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 import { ApolloProvider, InMemoryCache, ApolloClient } from "@apollo/client";
 import ErrorBoundary from "./ErrorBoundary";
 
+// Update the URI to match your deployed backend URL
 const client = new ApolloClient({
-	uri: "http://localhost:4000/graphql", // Update this to your backend URL on Render
+	uri: "https://space-server-cecn.onrender.com/graphql",
 	cache: new InMemoryCache(),
 });
 
