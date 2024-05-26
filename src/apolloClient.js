@@ -1,9 +1,7 @@
-import { ApolloClient, InMemoryCache, HttpLink } from "@apollo/client";
+import { ApolloClient, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
-	link: new HttpLink({
-		uri: "https://space-server.onrender.com",
-	}),
+	uri: "https://space-server-cecn.onrender.com/",
 	cache: new InMemoryCache(),
 });
 
